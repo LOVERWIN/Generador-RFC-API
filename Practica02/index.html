@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - Generación RFC y Consulta API</title>
+    <link rel="stylesheet" href="../public/css/css-bootstrap/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Generador RFC & API</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="rfc-link">Generar RFC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="api-link">Consultar API</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="container mt-5">
+        <!-- Formulario para RFC -->
+        <div id="rfc-form" class="form-section">
+            <h3>Generar RFC</h3>
+            <form id="formRFC">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellidoPaterno">Apellido Paterno</label>
+                    <input type="text" class="form-control" id="apellidoPaterno" placeholder="Ingresa tu apellido paterno">
+                </div>
+                <div class="form-group">
+                    <label for="apellidoMaterno">Apellido Materno</label>
+                    <input type="text" class="form-control" id="apellidoMaterno" placeholder="Ingresa tu apellido materno">
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento">
+                </div>
+                <button type="submit" class="btn btn-primary">Generar RFC</button>
+            </form>
+            <p id="resultadoRFC" class="mt-3"></p>
+        </div>
+
+        <!-- Formulario para consultar API -->
+        <div id="api-form" class="form-section" style="display: none;">
+            <h3>Consulta API</h3>
+            <form id="formAPI">
+                <div class="form-group">
+                    <label for="userId">ID de Usuario</label>
+                    <input type="number" class="form-control" id="userId" placeholder="Ingresa el ID de usuario">
+                </div>
+                <button type="submit" class="btn btn-primary">Consultar</button>
+            </form>
+            <div id="apiResult" class="mt-3"></div>
+        </div>
+    </div>
+
+    <script src="../js/util/jquery-3.7.1.min.js"></script>
+    <script src="../js/util/js-bootstrap/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

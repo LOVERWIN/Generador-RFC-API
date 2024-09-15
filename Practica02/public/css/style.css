@@ -1,0 +1,7 @@
+.custom-title {
+    background-color: rgba(135, 206, 250, 0.5); /* Celeste transparente */
+    text-align: center; /* Texto centrado */
+    color: rgb(15, 155, 242);
+    margin-bottom: 20px; /* Espacio inferior */
+    padding: 10px;
+}
